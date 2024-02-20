@@ -2,26 +2,95 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+/* about me base top */
+.custom-shape-divider-top-1708400667 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.custom-shape-divider-top-1708400667 svg {
+    position: relative;
+    display: block;
+    width: calc(300% + 1.3px);
+    height: 87px;
+    transform: rotateY(180deg);
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.custom-shape-divider-top-1708400667 .shape-fill {
+    fill: #FFFFFF;
+}
+
+
+
+/* about me base bottom */
+.custom-shape-divider-bottom-1708400190 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1708400190 svg {
+    position: relative;
+    display: block;
+    width: calc(161% + 1.3px);
+    height: 76px;
+}
+
+.custom-shape-divider-bottom-1708400190 .shape-fill {
+    fill: #FFFFFF;
+}
+
+
+/* hobbies  top */
+
+.custom-shape-divider-top-1708400313 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1708400313 svg {
+    position: relative;
+    display: block;
+    width: calc(161% + 1.3px);
+    height: 76px;
+}
+
+.custom-shape-divider-top-1708400313 .shape-fill {
+    fill: #FFFFFF;
+}
+
+/* hobbies down */
+.custom-shape-divider-bottom-1708461604 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1708461604 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 66px;
+}
+
+.custom-shape-divider-bottom-1708461604 .shape-fill {
+    fill: #FFFFFF;
 }
