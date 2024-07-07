@@ -21,13 +21,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html className=" h-screen dark" lang="en">
+    <html className=" h-screen" lang="en">
       <head>
-        <link
-          rel="stylesheet"
-          type="text/css"
-          href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
-        />
+        
       </head>
       <body className={inter.className + ' h-screen  w-scren '}>
         <main className=" text-black dark:text-white bg-gray-100 dark:bg-black  flex flex-col items-center min-h-screen  w-full py-20 px-5 ">
@@ -37,14 +33,7 @@ export default function RootLayout({
           </section>
         </main>
 
-        <Script
-          type="module"
-          src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-        ></Script>
-        <Script
-          noModule
-          src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-        ></Script>
+        
       </body>
     </html>
   );

@@ -28,7 +28,7 @@ export default function AboutMe() {
         and listening to music.
       </p>
 
-      <ul className="font-sm mt-8 flex flex-col space-x-0 space-y-2 text-neutral-600 md:flex-row md:space-x-4 md:space-y-0 dark:text-neutral-300 mb-10">
+      <ul className="font-sm mt-8 flex  space-x-2  text-neutral-600 md:flex-row  dark:text-neutral-300 mb-10">
         <li>
           <a
             className="flex items-center transition-all hover:text-gray-800 dark:hover:text-gray-100"
@@ -64,12 +64,14 @@ export default function AboutMe() {
         </li>
       </ul>
 
-      <div className="md:hidden flex justify-center">
+      <div className="md:hidden flex justify-start">
         {/*  eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          src="/friends.jpg"
+        <Image
+          src={young_photo}
           alt="friends image"
-          className=" w-5/6 rounded-xl"
+          className=" w-full rounded-xl"
+          placeholder='blur'
+            priority={false}
         />
       </div>
 
@@ -79,6 +81,8 @@ export default function AboutMe() {
             src={young_photo}
             alt="young me riding a cycle "
             className="aspect-video h-72 rounded-xl"
+            placeholder='blur'
+            priority={false}
           />
         </div>
         <div className="col-span-2 col-start-4">
@@ -94,6 +98,8 @@ export default function AboutMe() {
             src={family}
             alt="young me riding a cycle "
             className="aspect-video h-72 rounded-xl w-full"
+            placeholder='blur'
+            priority={false}
           />
         </div>
         <div className="col-span-2 col-start-1 row-start-2">
@@ -101,6 +107,8 @@ export default function AboutMe() {
             src={sister}
             alt="me and my sister "
             className="aspect-video h-72 rounded-xl w-full"
+            placeholder='blur'
+            priority={false}
           />
         </div>
       </div>

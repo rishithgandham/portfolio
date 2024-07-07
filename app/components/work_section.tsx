@@ -15,7 +15,7 @@ export default function WorkSection() {
       </p>
 
       <ul className=" w-full space-y-10 mt-10">
-        <li className="w-full rounded-xl grid lg:grid-cols-2 grid-cols-1 space-x-2 bg-slate-100 dark:border-white dark:bg-gray-900 border border-black p-5">
+        <li className="w-full rounded-xl grid lg:grid-cols-2 grid-cols-1 space-x-2 bg-slate-100 dark:border-gray-500 dark:bg-white/10 border border-black p-5">
           <div className="">
             <p className="text-xl font-semibold">Volunex</p>
             <p className="text-sm  mt-2 ">
@@ -56,7 +56,7 @@ export default function WorkSection() {
             />
           </div>
         </li>
-        <li className="w-full rounded-xl grid lg:grid-cols-2 grid-cols-1 space-x-2 bg-slate-100 dark:bg-gray-900 border border-black dark:border-white p-5">
+        <li className="w-full rounded-xl grid lg:grid-cols-2 grid-cols-1 space-x-2 bg-slate-100  border border-black dark:border-gray-500 dark:bg-white/10 p-5">
           <div className="">
             <p className="text-xl font-semibold">Tutoring App </p>
             <p className="text-sm  mt-2 ">
