@@ -12,7 +12,7 @@ import { MdArrowOutward } from 'react-icons/md';
 export default function AboutMe() {
   return (
     <>
-      <p className="text-2xl my-10 font-semibold flex justify-between">
+      <p className="text-2xl my-10 font-semibold flex justify-between" id="about">
         hey there, i&apos;m rishith 👋
       </p>
       <p className="text-lg font-semibold mb-5">

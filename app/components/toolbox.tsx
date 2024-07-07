@@ -7,7 +7,7 @@ import { SiCss3, SiGithub, SiHtml5, SiMongodb, SiTypescript, SiVercel } from 're
 export default function Toolbox() {
   return (
     <>
-      <p className="text-2xl mt-20 mb-2 font-semibold flex justify-between">
+      <p className="text-2xl mt-20 mb-2 font-semibold flex justify-between" id="skills">
         my toolbox 🔨✂️🔦
       </p>
       <p className="text-sm dark:text-gray-300 text-gray-700">
@@ -16,7 +16,7 @@ export default function Toolbox() {
         next.js and firebase. I love the styling freedom that Tailwind CSS gives
         me, and that is why I use it for every app.
       </p>
-      <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 xs:grid-cols-1 gap-3 mt-5">
+      <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 xs:grid-cols-1 gap-3 mt-5" >
         
         <ToolIcon icon={ <RiNextjsLine className="text-3xl text-gray-800 dark:text-white"/>} name='Next.js' />
         <ToolIcon icon={ <RiFirebaseLine className="text-3xl text-gray-800 dark:text-white"/>} name='Firebase'/>

@@ -5,6 +5,8 @@ import { Switch } from '@headlessui/react';
 import { BiMoon, BiSun } from 'react-icons/bi';
 import { useLocalStorage } from 'usehooks-ts';
 
+import Link  from 'next/link';
+
 export default function Navbar() {
   const [dark, setDark] = useState(false);
 
@@ -16,10 +18,10 @@ export default function Navbar() {
         
         <nav>
           <ul className="flex gap-5 md:text-md text-sm dark:text-gray-300 text-gray-700">
-            <li className="md:text-md text-sm font-semibold ">About</li>
-            <li className=" font-semibold">Skills</li>
-            <li className=" font-semibold ">Work</li>
-            <li className=" font-semibold t">Contact</li>
+            <Link href="#about"className="md:text-md text-sm font-semibold ">About</Link>
+            <Link href="#skills" className=" font-semibold">Skills</Link>
+            <Link href="#work" className=" font-semibold ">Work</Link>
+            <Link  href="#contact"className=" font-semibold t">Contact</Link>
           </ul>
         </nav>
       </div>

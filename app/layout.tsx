@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html className=" h-screen" lang="en">
       <head>
-        
+        <title>Rishith Gandham</title>
       </head>
       <body className={inter.className + ' h-screen  w-scren '}>
         <main className=" text-black dark:text-white bg-gray-100 dark:bg-black  flex flex-col items-center min-h-screen  w-full py-20 px-5 ">
