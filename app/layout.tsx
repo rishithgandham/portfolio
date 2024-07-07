@@ -1,11 +1,14 @@
 import type { Metadata } from 'next';
-import { DM_Sans, Inter, Rubik } from 'next/font/google';
+import { DM_Sans, Inter, Noto_Sans, Rubik, Tenor_Sans } from 'next/font/google';
 import './globals.css';
-import Navbar from './components/Navbar';
 import Script from 'next/script';
+import { GeistSans } from 'geist/font/sans';
+import Navbar from './components/navbar';
 
 const inter = Inter({ subsets: ['latin'] });
 const rubik = Rubik({ subsets: ['latin'] });
+const gs = Tenor_Sans({ subsets: ['latin'], weight: '400' });
+const noto = Noto_Sans({ subsets: ['latin'], weight: '400' });
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -18,11 +21,21 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html className="w-screen h-screen" lang="en">
-      <head></head>
-      <body className={inter.className + 'h-full w-full'}>
-        <Navbar />
-        {children}
+    <html className=" h-screen dark" lang="en">
+      <head>
+        <link
+          rel="stylesheet"
+          type="text/css"
+          href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+        />
+      </head>
+      <body className={inter.className + ' h-screen  w-scren '}>
+        <main className=" text-black dark:text-white bg-gray-100 dark:bg-black  flex flex-col items-center min-h-screen  w-full py-20 px-5 ">
+          <section className="lg:w-[54rem] w-full ">
+            <Navbar />
+            {children}
+          </section>
+        </main>
 
         <Script
           type="module"
@@ -36,3 +49,4 @@ export default function RootLayout({
     </html>
   );
 }
+// 2xl:px-[30rem] xl:px-60 lg:px-32 md:px-20  pt-20
