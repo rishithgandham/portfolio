@@ -4,6 +4,7 @@ import './globals.css';
 import Script from 'next/script';
 import { GeistSans } from 'geist/font/sans';
 import Navbar from './components/navbar';
+import Footer from './components/footer';
 
 const inter = Inter({ subsets: ['latin'] });
 const rubik = Rubik({ subsets: ['latin'] });
@@ -30,6 +31,7 @@ export default function RootLayout({
           <section className="lg:w-[54rem] w-full ">
             <Navbar />
             {children}
+            <Footer/>
           </section>
         </main>
 

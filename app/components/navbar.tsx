@@ -5,23 +5,36 @@ import { Switch } from '@headlessui/react';
 import { BiMoon, BiSun } from 'react-icons/bi';
 import { useLocalStorage } from 'usehooks-ts';
 
-import Link  from 'next/link';
+import Link from 'next/link';
+import { link } from 'fs';
+import { useRouter } from 'next/navigation';
 
 export default function Navbar() {
   const [dark, setDark] = useState(false);
+  const router = useRouter();
 
   return (
     <>
       <div className="flex items-center justify-between w-full  py-4">
-        
-          <ThemeSwitch />
-        
+        <ThemeSwitch />
+
         <nav>
           <ul className="flex gap-5 md:text-md text-sm dark:text-gray-300 text-gray-700">
-            <Link href="#about"className="md:text-md text-sm font-semibold ">About</Link>
-            <Link href="#skills" className=" font-semibold">Skills</Link>
-            <Link href="#work" className=" font-semibold ">Work</Link>
-            <Link  href="#contact"className=" font-semibold t">Contact</Link>
+            {navigation_items.map((item, i) => (
+              <div key={i}>
+                <button
+                  onClick={e => {
+                    e.preventDefault();
+                    const target = document.querySelector(item.link);
+                    target?.scrollIntoView({ behavior: 'smooth', block: 'start'});
+                  }}
+                  className="md:text-md text-sm font-semibold "
+                >
+                  {item.name}
+                </button>
+              </div>
+            ))}
+            
           </ul>
         </nav>
       </div>
@@ -29,6 +42,28 @@ export default function Navbar() {
   );
 }
 
+type navigation_items = {
+  name: string;
+  link: string;
+};
+const navigation_items: navigation_items[] = [
+  {
+    name: 'About',
+    link: '#about',
+  },
+  {
+    name: 'Skills',
+    link: '#skills',
+  },
+  {
+    name: 'Work',
+    link: '#work',
+  },
+  {
+    name: 'Contact',
+    link: '#contact',
+  },
+];
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(' ');
 }
