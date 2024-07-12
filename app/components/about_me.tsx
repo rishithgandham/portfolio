@@ -85,7 +85,7 @@ export default function AboutMe() {
             priority={false}
           />
         </div>
-        <div className="col-span-2 col-start-4">
+        <div className="col-span-2 col-start-4 w-full">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="/friends.jpg"

@@ -3,5 +3,6 @@
         "Nextjs",
         "Tailwindcss",
         "volunex"
-    ]
+    ],
+    "cSpell.diagnosticLevel": "Hint",
 }
