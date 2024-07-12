@@ -8,7 +8,7 @@ export default function robots(): MetadataRoute.Robots{
           allow: '/'
         },
       ],
-      sitemap: 'http://rishithgandham.vercel.app/sitemap.xml',
-      host: 'http://rishithgandham.vercel.app',
+      sitemap: 'https://rishithgandham.vercel.app/sitemap.xml',
+      host: 'https://rishithgandham.vercel.app',
     };
   }
