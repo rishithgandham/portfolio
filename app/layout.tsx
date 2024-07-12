@@ -21,13 +21,8 @@ export const metadata: Metadata = {
     canonical: './'
   },
   twitter: {
-    site: '@rishithgandham',
     card: 'summary_large_image',
     description: 'Hi, I am Rishith Gandham, a 15 year old full web developer stack developer from Virginia.',
-    images: {
-      url: '/young_photo.jpg',
-      alt: 'a photo of me when I was young'
-    }
   },
   openGraph: {
     title: 'Rishith Gandham',
@@ -38,7 +33,7 @@ export const metadata: Metadata = {
       url: '/young_photo.jpg',
       alt: 'a photo of me when I was young'
     }
-    
+
   }
 
   
