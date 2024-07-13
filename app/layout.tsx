@@ -14,7 +14,7 @@ const noto = Noto_Sans({ subsets: ['latin'], weight: '400' });
 export const metadata: Metadata = {
   metadataBase: new URL('https://rishithgandham.vercel.app'),
   title: 'Rishith Gandham',
-  description: 'Hi, I am Rishith Gandham, a 15 year old full web developer stack developer from Virginia.',
+  description: 'Hi, I am Rishith Gandham, a 15 year old passionate about programming and web development.',
   creator: "Rishith Gandham",
   keywords: ['Rishith', 'Gandham'],
   alternates: {
@@ -22,23 +22,30 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    description: 'Hi, I am Rishith Gandham, a 15 year old full web developer stack developer from Virginia.',
+    description: 'Hi, I am Rishith Gandham, a 15 year old passionate about programming and web development.',
+    
   },
   openGraph: {
     title: 'Rishith Gandham',
-    description: 'Hi, I am Rishith Gandham, a 15 year old full web developer stack developer from Virginia.',
+    description: 'Hi, I am Rishith Gandham, a 15 year old passionate about programming and web development.',
     url: './',
     type: 'website',
     images: {
       url: '/young_photo.jpg',
       alt: 'a photo of me when I was young'
-    }
+    },
+    
 
+  },
+  verification: {
+    google: '0zfOAU0qbnlRhCVbRzPgffHu34kpXfnEDLOcsVV1PZ8',
   }
 
   
   
 };
+
+
 
 export default function RootLayout({
   children,
